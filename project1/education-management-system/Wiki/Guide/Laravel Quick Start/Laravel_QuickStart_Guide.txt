@@ -1,0 +1,48 @@
+We will be using Xampp as our Apache-PHP and MySQL server. Please install it from https://www.apachefriends.org/download.html . 
+
+The default installation should be in c:\xampp folder.
+
+
+1. a. Download https://getcomposer.org/Composer-Setup.exe composer and install. 
+   b. Point your php.exe in Composer Installation. Check screenshot 1 
+   c. Skip proxy setting
+   d. Verify Composer installtion. Check screenshot 2
+
+2. Create a demo project inside c:\xampp\htdocs. Check screenshot 3
+   Command : composer create-project --prefer-dist laravel/laravel demo
+
+3. Test the newly created project. Check screenshot 4
+   URL : http://localhost/demo/public
+
+4. Create a database "demo" in MySQL (http://localhost/phpmyadmin will get you to MySQL Database). Goto config/database.php and setup your local MySQL DB.
+
+	Example
+	
+       'default' => env('DB_CONNECTION', 'mysql'),
+		
+	'mysql' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'demo'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
+            'engine' => null,
+        ],
+	
+5. Verify you have PHP command in your OS Path. (Check this if you are not sure http://stackoverflow.com/questions/2736528/how-to-set-the-env-variable-for-php)
+   Check screenshot 5
+
+6. Go to your projet folder and test "php artisan list" command. Check screenshot 6
+   Command: php artisan list
+
+7. Change you .env file in the project root folder. Check screenshot 7
+	
+	Important Links :
+	https://laravel.com/docs/5.2
+	https://getcomposer.org/doc/00-intro.md
+	https://www.youtube.com/user/laracasts

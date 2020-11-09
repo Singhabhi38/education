@@ -1,0 +1,7 @@
+. Download and Install https://git-scm.com/downloads (Leave all the settings/options to default)
+. Verify you have 'git' command (Windows + R > cmd > type git)
+. Download and Install https://github-windows.s3.amazonaws.com/GitHubSetup.exe
+. Download a windows installer from https://nodejs.org/download/release/latest-v6.x/ (We will be using 'bower' to manage front end packages)
+. Verify you have 'npm' command
+. run: npm install -g bower
+. Verify you have 'bower' command

@@ -1,0 +1,23 @@
+HTML <div ng-controller="UserController">.....................</div>
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserController
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserService
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserRestClient [AngularJS Factory]
+
+   |   /|\
+   |    |
+  \_/   |

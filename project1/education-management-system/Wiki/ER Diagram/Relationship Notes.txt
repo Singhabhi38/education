@@ -1,0 +1,7 @@
+- A User has one UserDetail record.
+- A User has multiple Attendance records.
+- A User can be associated with multiple Grades(If he/she is a teacher/HOD/Principal.)
+- A User can study/teach multiple Courses.
+- A User can have multiple roles (ClassTeacher-Teacher-HOD).
+- A User can have records of multiple Transactions (Fees paid or Salary Received).
+- A Course can have multiple records of Schedules.

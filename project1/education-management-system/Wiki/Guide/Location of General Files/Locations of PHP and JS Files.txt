@@ -1,0 +1,33 @@
+Location of PHP files
+
+*create_*_table.php - database/migration - Table creating script
+
+I*DAO.php - App/Product/DAO - Data Access Object Layer Interface
+
+I*Service.php - App/Product/Service - Service Layer Interface
+
+*Controller.php - App/http/Controller - Controllers
+
+*DAO.php - App/Product/DAO - DAO Implementation
+
+*DAOProvider.php - App/Providers - Creates actual DAO instances for the application
+
+*DTOTransformer.php - App/Product/DAOUtil - Transforms Data before and after hitting database.
+
+*-form.blade.php - resources/views/partials - Form for edit and create for various entities
+
+*-list-card.blade.php - resources/views/partials - Table(List) and Card display for various entities
+
+*Model.php - App/ - Mapping between the Tables and Entity in our system
+
+*Service.php - App/Product/Service - Service Layer Implementation
+
+*ServiceProvider.php - App/Providers - Creates actual Service instances for the application
+
+Location of Javascript Files
+
+*Controller.js - public/resources/js/*/*Controller.js - Controllers for our forms
+
+*Service.js - public/resources/js/*/*Service.js - Services
+
+*Factory.js - public/resources/js/*/*Factory.js - Creates restful client endpoints, other objects i.e basically creates multiple instances of anything

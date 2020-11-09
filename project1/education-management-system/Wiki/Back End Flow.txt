@@ -1,0 +1,49 @@
+Database
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserModel extends Model [ Framework ]
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserDTOTransformer [ Transformation (converting created_at to createdAt. We will add more REAL logic later), Removing sensitive fields like 'password', 'token' that should never be passed around, etc. ]
+
+   |   /|\
+   |    |
+  \_/   |
+    
+UserDAO [ All Eloquoent queries ]
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserService [ Business Logic Layer like not allowing certain username/email, not allowing attendance after hh:ii AM, etc, Service layer will handle all the exceptions, technical exceptions (No database connection, any SQL exceptions thrown from DAO layer) or business exceptions (User not found, Can not assign role x to user x, integrity constraints, etc.) and set correct business message for front end to receive. ]
+
+   |   /|\
+   |    |
+  \_/   |
+  
+UserController [ Very thin layer. Just call the right service function accoring to request URL and/or parameters ]
+
+   |   /|\
+   |    |
+  \_/   |
+  
+Middleware [ Core applicaiton logic like authentication, validation, security checks, recording access logs, ] [This layer is low priority now. ]
+
+   |   /|\
+   |    |
+  \_/   |
+  
+Routes [ Register URLs the application will respond to. All others will receive 404 ]
+
+   |       /|\
+   |  HTTP  |
+  \_/       |
+  
+  

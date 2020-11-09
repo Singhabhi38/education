@@ -1,0 +1,39 @@
+Useful Commands
+
+Creating Model
+
+ * php artisan make:model ????
+
+Creating resourseful controller
+
+ * php artisan make:controller ??????? --resource
+
+Note : DAO and Service can NOT be created with Commands
+
+Process :
+
+A.) Backend WorkFlow
+
+* Create Model PHP
+
+* Create DAO PHP
+
+* Create Service PHP
+
+* Create Controller PHP
+
+* Add Route in routes.php for resourseful URI PHP
+
+B.) Frontend WorkFlow
+
+* Create Form .BLADE.PHP
+
+* Create Controller JS
+
+* Add required bindings in controller JS
+
+* Create Service JS
+
+* Create Factory JS
+
+* Add necessary rest client points and custom end points in $resource JS

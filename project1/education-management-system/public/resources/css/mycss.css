@@ -1,0 +1,13 @@
+body {
+    font-family: 'Abel', sans-serif;
+    font-size:18px;
+}
+
+md-tabs.product-detail-page-tab{
+    margin: 8px;
+    margin-top: 20px;
+}
+
+md-sidenav{
+    max-height: 500px;
+}
